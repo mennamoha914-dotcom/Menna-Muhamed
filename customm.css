@@ -1,0 +1,91 @@
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #171526;
+    color: #f2edf9;
+    line-height: 1.6;}
+.container {
+    width: min(1000px, 92%);
+    margin: 30px auto;}
+.site-header {
+    padding: 28px;
+    text-align: center;
+    background: #35245e;
+    color: #fff8dc;
+    border: 1px solid #8e72c7;
+    border-radius: 14px;
+    margin-bottom: 22px;}
+.site-header h1 {
+    margin: 0 0 10px;}
+.site-header p {
+    margin: 5px 0;}
+.panel {
+    background: #242039;
+    padding: 24px;
+    margin-bottom: 22px;
+    border: 1px solid #493d69;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);}
+h2, .course-card h4 {
+    color: #f3c969;
+    margin-top: 0;}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;}
+.course-card {
+    padding: 16px;
+    border: 1px solid #625184;
+    border-radius: 9px;
+    background: #2e2848;}
+form {
+    display: grid;
+    gap: 10px;}
+label {
+    font-weight: bold;
+    margin-top: 6px;
+    color: #f4d991;}
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #71618f;
+    border-radius: 6px;
+    font: inherit;
+    background: #171526;
+    color: #f2edf9;}
+button {
+    margin-top: 12px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 7px;
+    background: #d9ad43;
+    color: #211934;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;}
+button:hover {
+    background: #f0c85f;}
+.alert {
+    padding: 16px;
+    margin: 18px 0;
+    border-radius: 8px;}
+.success {
+    background: #203d31;
+    border: 1px solid #579b76;
+    color: #c9f7dc;}
+.error {
+    background: #4a252f;
+    border: 1px solid #bd6878;
+    color: #ffd6dd;}
+footer {
+    text-align: center;
+    color: #c0b7d3;
+    padding: 12px;}
+@media (max-width: 600px) {
+    .site-header, .panel {
+        padding: 18px;
+    }
+    .site-header h1 {
+        font-size: 1.6rem;
+    }}

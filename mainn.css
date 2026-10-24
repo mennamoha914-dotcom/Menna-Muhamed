@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf5fb;
+    color: #243447;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+.site-header {
+    padding: 28px;
+    text-align: center;
+    background: #1769aa;
+    color: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 22px;
+}
+
+.site-header h1 {
+    margin: 0 0 10px;
+}
+
+.site-header p {
+    margin: 5px 0;
+}
+
+.panel {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(20, 55, 80, 0.08);
+}
+
+h2 {
+    color: #1769aa;
+    margin-top: 0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+}
+
+.course-card {
+    padding: 16px;
+    border: 1px solid #cbddec;
+    border-radius: 9px;
+    background: #f7fbff;
+}
+
+.course-card h4 {
+    margin-top: 0;
+    color: #14558a;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b6c8d8;
+    border-radius: 6px;
+    font: inherit;
+    background: #ffffff;
+    color: #243447;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 7px;
+    background: #1769aa;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105487;
+}
+
+.alert {
+    padding: 16px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+.success {
+    background: #e7f8ec;
+    border: 1px solid #8bd4a0;
+    color: #185c2c;
+}
+
+.error {
+    background: #fff0f0;
+    border: 1px solid #e7a2a2;
+    color: #8b1f1f;
+}
+
+footer {
+    text-align: center;
+    color: #5e7080;
+    padding: 12px;
+}
+
+@media (max-width: 600px) {
+    .site-header, .panel {
+        padding: 18px;
+    }
+
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+}
